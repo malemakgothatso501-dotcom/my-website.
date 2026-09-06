@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+	    content="Checkout at KGOTHATSO STREETWEAR.">
+    <title>Checkout | KGOTHATSO STREETWEAR</title>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span>K</span> KGOTHATSO
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="shop.html">Shop</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+
+        <a href="cart.html" class="cart">
+
+            🛒 <span id="cartCount">0</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         CHECKOUT HEADER
+    ========================== -->
+
+    <section class="page-header">
+
+        <h1>CHECKOUT</h1>
+
+        <p>Complete your order and make your payment.</p>
+
+    </section>
+
+
+
+    <!-- =========================
+         CHECKOUT
+    ========================== -->
+
+    <main class="checkout-container">
+
+
+        <!-- CUSTOMER DETAILS -->
+
+        <div class="checkout-form">
+
+            <h2>Delivery Details</h2>
+
+
+            <form id="checkoutForm">
+
+
+                <label for="fullName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@email.com"
+                    required
+                >
+
+
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="e.g. 071 234 5678"
+                    required
+                >
+
+
+
+                <label for="address">
+                    Delivery / Collection Address
+                </label>
+
+                <input
+                    type="text"
+                    id="address"
+                    placeholder="Enter your address"
+                    required
+                >
+
+
+
+                <div class="checkout-row">
+
+
+                    <div>
+
+                        <label for="city">
+                            City / Town
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="City or town"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="postalCode">
+                            Postal Code
+                        </label>
+
+                        <input
+                            type="text"
+                            id="postalCode"
+                            placeholder="0000"
+                            required
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+
+                <label for="province">
+                    Province
+                </label>
+
+                <select id="province" required>
+
+                    <option value="">
+                        Select province
+                    </option>
+
+                    <option>
+                        Eastern Cape
+                    </option>
+
+                    <option>
+                        Free State
+                    </option>
+
+                    <option>
+                        Gauteng
+                    </option>
+
+                    <option>
+                        KwaZulu-Natal
+                    </option>
+
+                    <option>
+                        Limpopo
+                    </option>
+
+                    <option>
+                        Mpumalanga
+                    </option>
+
+                    <option>
+                        Northern Cape
+                    </option>
+
+                    <option>
+                        North West
+                    </option>
+
+                    <option>
+                        Western Cape
+                    </option>
+
+                </select>
+
+
+
+                <!-- DELIVERY OPTION -->
+
+                <label for="delivery">
+                    Delivery Option
+                </label>
+
+                <select id="delivery" required>
+
+                    <option value="60">
+                        Standard Delivery — R60
+                    </option>
+
+                    <option value="100">
+                        Express Delivery — R100
+                    </option>
+
+                    <option value="0">
+                        Collection — Free
+                    </option>
+
+                </select>
+
+
+
+                <!-- =========================
+                     PAYMENT DETAILS
+                ========================== -->
+
+                <div class="payment-box">
+
+                    <h2>Payment Details</h2>
+
+                    <p class="payment-instruction">
+
+                        Please make payment using your banking app
+                        before submitting your order.
+
+                    </p>
+
+
+                    <div class="bank-details">
+
+                        <p>
+                            <strong>Bank:</strong>
+                            Capitec Bank
+                        </p>
+
+                        <p>
+                            <strong>Account Holder:</strong>
+                            KGOTHATSO STREETWEAR
+                        </p>
+
+                        <p>
+                            <strong>Account Number:</strong>
+                            0674995505
+                        </p>
+
+                        <p>
+                            <strong>Reference:</strong>
+                            Use your phone number
+                        </p>
+
+                    </div>
+
+
+                    <p class="payment-warning">
+
+                        ⚠️ Please make sure the payment amount
+                        matches your order total.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- PAYMENT PROOF -->
+
+                <label for="paymentProof">
+                    Payment Proof
+                </label>
+
+                <input
+                    type="file"
+                    id="paymentProof"
+                    accept="image/*"
+                    required
+                >
+
+
+                <p class="file-note">
+
+                    Upload a screenshot or photo showing your
+                    payment confirmation.
+
+                </p>
+
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="checkout-button">
+
+                    SUBMIT ORDER →
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+
+        <!-- =========================
+             ORDER SUMMARY
+        ========================== -->
+
+        <div class="order-summary">
+
+            <h2>Your Order</h2>
+
+
+            <div id="checkoutItems">
+
+                <!-- Cart products appear here -->
+
+            </div>
+
+
+
+            <div class="summary-line">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <span>
+                    R<span id="checkoutSubtotal">0.00</span>
+                </span>
+
+            </div>
+
+
+
+            <div class="summary-line">
+
+                <span>
+                    Delivery
+                </span>
+
+                <span>
+                    R<span id="checkoutDelivery">0.00</span>
+                </span>
+
+            </div>
+
+
+
+            <hr>
+
+
+
+            <div class="summary-total">
+
+                <span>
+                    Total
+                </span>
+
+                <span>
+                    R<span id="checkoutTotal">0.00</span>
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>
+            KGOTHATSO STREETWEAR
+        </h2>
+
+        <p>
+            Wear Your Identity.
+        </p>
+
+        <p class="copyright">
+            © 2026 Kgothatso Streetwear.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
